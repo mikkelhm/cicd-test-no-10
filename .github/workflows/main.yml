@@ -41,7 +41,7 @@ jobs:
     with:
       artifactId: ${{ needs.cloud-artifact.outputs.artifactId }}
       targetEnvironmentAlias: ${{ vars.TARGET_ENVIRONMENT_ALIAS }}
-      noBuildAndRestore: "false"
+      noBuildAndRestore: "true"
       skipVersionCheck: "false"
       skipPreserveUmbracoCloudJson: "false"
       runSchemaExtraction: "true"
